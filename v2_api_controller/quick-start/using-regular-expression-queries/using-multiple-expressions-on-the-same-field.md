@@ -1,5 +1,3 @@
-Using Multiple Expressions On The Same Field.
-
 It is possible to repeatedly query the same field from multiple
 regular expressions.  To do this, use a numerical suffix on the query
 parameter.  So instead of custom_re, for example, use

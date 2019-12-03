@@ -35,11 +35,12 @@ apiDocSpecification = {
                                                       },
   },
   'Access Modes' => {
-    'Via SCORMCloud App ID and Secret Key' => {},
     'Via Bright API Key' => {},
     'Via Realm ID and Secret Key' => {},
+    'Via SCORMCloud App ID and Secret Key' => {},
   },
   'API Modules' => {
+    'List Of Parameters Available To All Methods' => {},
     'API Key' => {
       'Method: create' => {
         'HTTP Model:' => {},

@@ -19,93 +19,94 @@
 				*	 3.4.2. [Using Multiple Expressions On The Same Field.](#sec-3-4-2)
 		*	 3.5. [Specifying the List Of Fields To Be Returned](#sec-3-5)
 *	 4. [Access Modes](#sec-4)
-		*	 4.1. [Via SCORMCloud App ID and Secret Key](#sec-4-1)
-		*	 4.2. [Via Bright API Key](#sec-4-2)
-		*	 4.3. [Via Realm ID and Secret Key](#sec-4-3)
+		*	 4.1. [Via Bright API Key](#sec-4-1)
+		*	 4.2. [Via Realm ID and Secret Key](#sec-4-2)
+		*	 4.3. [Via SCORMCloud App ID and Secret Key](#sec-4-3)
 *	 5. [API Modules](#sec-5)
-		*	 5.1. [API Key](#sec-5-1)
-				*	 5.1.1. [Method: create](#sec-5-1-1)
-						*	 5.1.1.1. [HTTP Model:](#sec-5-1-1-1)
-						*	 5.1.1.2. [Parameters](#sec-5-1-1-2)
-						*	 5.1.1.3. [Return Data](#sec-5-1-1-3)
-						*	 5.1.1.4. [Example:](#sec-5-1-1-4)
-						*	 5.1.1.5. [HTTP Codes](#sec-5-1-1-5)
-		*	 5.2. [Course](#sec-5-2)
-				*	 5.2.1. [Determining your :id for create and update](#sec-5-2-1)
-				*	 5.2.2. [Method: Index](#sec-5-2-2)
-						*	 5.2.2.1. [HTTP Model:](#sec-5-2-2-1)
-						*	 5.2.2.2. [Parameters](#sec-5-2-2-2)
-						*	 5.2.2.3. [Example](#sec-5-2-2-3)
-						*	 5.2.2.4. [HTTP Codes](#sec-5-2-2-4)
-		*	 5.3. [Invitation](#sec-5-3)
-				*	 5.3.1. [Method: add_learners](#sec-5-3-1)
-						*	 5.3.1.1. [HTTP Model](#sec-5-3-1-1)
-						*	 5.3.1.2. [parameters](#sec-5-3-1-2)
-						*	 5.3.1.3. [HTTP Codes](#sec-5-3-1-3)
-						*	 5.3.1.4. [Example](#sec-5-3-1-4)
-						*	 5.3.1.5. [Return Data](#sec-5-3-1-5)
-		*	 5.4. [Realm User](#sec-5-4)
-				*	 5.4.1. [Method: index](#sec-5-4-1)
+		*	 5.1. [List Of Parameters Available To All Methods](#sec-5-1)
+		*	 5.2. [API Key](#sec-5-2)
+				*	 5.2.1. [Method: create](#sec-5-2-1)
+						*	 5.2.1.1. [HTTP Model:](#sec-5-2-1-1)
+						*	 5.2.1.2. [Parameters](#sec-5-2-1-2)
+						*	 5.2.1.3. [Return Data](#sec-5-2-1-3)
+						*	 5.2.1.4. [Example:](#sec-5-2-1-4)
+						*	 5.2.1.5. [HTTP Codes](#sec-5-2-1-5)
+		*	 5.3. [Course](#sec-5-3)
+				*	 5.3.1. [Determining your :id for create and update](#sec-5-3-1)
+				*	 5.3.2. [Method: Index](#sec-5-3-2)
+						*	 5.3.2.1. [HTTP Model:](#sec-5-3-2-1)
+						*	 5.3.2.2. [Parameters](#sec-5-3-2-2)
+						*	 5.3.2.3. [Example](#sec-5-3-2-3)
+						*	 5.3.2.4. [HTTP Codes](#sec-5-3-2-4)
+		*	 5.4. [Invitation](#sec-5-4)
+				*	 5.4.1. [Method: add_learners](#sec-5-4-1)
 						*	 5.4.1.1. [HTTP Model](#sec-5-4-1-1)
 						*	 5.4.1.2. [parameters](#sec-5-4-1-2)
 						*	 5.4.1.3. [HTTP Codes](#sec-5-4-1-3)
 						*	 5.4.1.4. [Example](#sec-5-4-1-4)
 						*	 5.4.1.5. [Return Data](#sec-5-4-1-5)
-				*	 5.4.2. [Method: create](#sec-5-4-2)
-						*	 5.4.2.1. [Parameters](#sec-5-4-2-1)
-						*	 5.4.2.2. [HTTP Codes](#sec-5-4-2-2)
-						*	 5.4.2.3. [Example](#sec-5-4-2-3)
-				*	 5.4.3. [Method: update (gupdate)](#sec-5-4-3)
-						*	 5.4.3.1. [Parameters](#sec-5-4-3-1)
-						*	 5.4.3.2. [HTTP Codes](#sec-5-4-3-2)
-						*	 5.4.3.3. [Example](#sec-5-4-3-3)
-		*	 5.5. [Registration](#sec-5-5)
-				*	 5.5.1. [Determining your :id for create and update](#sec-5-5-1)
-				*	 5.5.2. [Format of return data](#sec-5-5-2)
-				*	 5.5.3. [Method: index](#sec-5-5-3)
-						*	 5.5.3.1. [HTTP Model](#sec-5-5-3-1)
-						*	 5.5.3.2. [parameters](#sec-5-5-3-2)
-						*	 5.5.3.3. [HTTP Codes](#sec-5-5-3-3)
-						*	 5.5.3.4. [Example](#sec-5-5-3-4)
-						*	 5.5.3.5. [Return Data](#sec-5-5-3-5)
-				*	 5.5.4. [Method: create](#sec-5-5-4)
-						*	 5.5.4.1. [Parameters](#sec-5-5-4-1)
-						*	 5.5.4.2. [HTTP Codes](#sec-5-5-4-2)
-						*	 5.5.4.3. [Example](#sec-5-5-4-3)
-				*	 5.5.5. [Method: launch_url](#sec-5-5-5)
-						*	 5.5.5.1. [HTTP Model](#sec-5-5-5-1)
-						*	 5.5.5.2. [parameters](#sec-5-5-5-2)
-						*	 5.5.5.3. [HTTP Codes](#sec-5-5-5-3)
-						*	 5.5.5.4. [Example](#sec-5-5-5-4)
-						*	 5.5.5.5. [Return Data](#sec-5-5-5-5)
-		*	 5.6. [StoredQuery](#sec-5-6)
-				*	 5.6.1. [Method: initialize](#sec-5-6-1)
-						*	 5.6.1.1. [HTTP Model](#sec-5-6-1-1)
-						*	 5.6.1.2. [parameters](#sec-5-6-1-2)
-						*	 5.6.1.3. [HTTP Codes](#sec-5-6-1-3)
-						*	 5.6.1.4. [Example](#sec-5-6-1-4)
-						*	 5.6.1.5. [Return Data](#sec-5-6-1-5)
-				*	 5.6.2. [Method: run](#sec-5-6-2)
-						*	 5.6.2.1. [HTTP Model](#sec-5-6-2-1)
-						*	 5.6.2.2. [parameters](#sec-5-6-2-2)
-						*	 5.6.2.3. [HTTP Codes](#sec-5-6-2-3)
-						*	 5.6.2.4. [Example](#sec-5-6-2-4)
-						*	 5.6.2.5. [Return Data](#sec-5-6-2-5)
-		*	 5.7. [Template](#sec-5-7)
-				*	 5.7.1. [Method: index](#sec-5-7-1)
+		*	 5.5. [Realm User](#sec-5-5)
+				*	 5.5.1. [Method: index](#sec-5-5-1)
+						*	 5.5.1.1. [HTTP Model](#sec-5-5-1-1)
+						*	 5.5.1.2. [parameters](#sec-5-5-1-2)
+						*	 5.5.1.3. [HTTP Codes](#sec-5-5-1-3)
+						*	 5.5.1.4. [Example](#sec-5-5-1-4)
+						*	 5.5.1.5. [Return Data](#sec-5-5-1-5)
+				*	 5.5.2. [Method: create](#sec-5-5-2)
+						*	 5.5.2.1. [Parameters](#sec-5-5-2-1)
+						*	 5.5.2.2. [HTTP Codes](#sec-5-5-2-2)
+						*	 5.5.2.3. [Example](#sec-5-5-2-3)
+				*	 5.5.3. [Method: update (gupdate)](#sec-5-5-3)
+						*	 5.5.3.1. [Parameters](#sec-5-5-3-1)
+						*	 5.5.3.2. [HTTP Codes](#sec-5-5-3-2)
+						*	 5.5.3.3. [Example](#sec-5-5-3-3)
+		*	 5.6. [Registration](#sec-5-6)
+				*	 5.6.1. [Determining your :id for create and update](#sec-5-6-1)
+				*	 5.6.2. [Format of return data](#sec-5-6-2)
+				*	 5.6.3. [Method: index](#sec-5-6-3)
+						*	 5.6.3.1. [HTTP Model](#sec-5-6-3-1)
+						*	 5.6.3.2. [parameters](#sec-5-6-3-2)
+						*	 5.6.3.3. [HTTP Codes](#sec-5-6-3-3)
+						*	 5.6.3.4. [Example](#sec-5-6-3-4)
+						*	 5.6.3.5. [Return Data](#sec-5-6-3-5)
+				*	 5.6.4. [Method: create](#sec-5-6-4)
+						*	 5.6.4.1. [Parameters](#sec-5-6-4-1)
+						*	 5.6.4.2. [HTTP Codes](#sec-5-6-4-2)
+						*	 5.6.4.3. [Example](#sec-5-6-4-3)
+				*	 5.6.5. [Method: launch_url](#sec-5-6-5)
+						*	 5.6.5.1. [HTTP Model](#sec-5-6-5-1)
+						*	 5.6.5.2. [parameters](#sec-5-6-5-2)
+						*	 5.6.5.3. [HTTP Codes](#sec-5-6-5-3)
+						*	 5.6.5.4. [Example](#sec-5-6-5-4)
+						*	 5.6.5.5. [Return Data](#sec-5-6-5-5)
+		*	 5.7. [StoredQuery](#sec-5-7)
+				*	 5.7.1. [Method: initialize](#sec-5-7-1)
 						*	 5.7.1.1. [HTTP Model](#sec-5-7-1-1)
 						*	 5.7.1.2. [parameters](#sec-5-7-1-2)
 						*	 5.7.1.3. [HTTP Codes](#sec-5-7-1-3)
 						*	 5.7.1.4. [Example](#sec-5-7-1-4)
 						*	 5.7.1.5. [Return Data](#sec-5-7-1-5)
-				*	 5.7.2. [Method: create](#sec-5-7-2)
-						*	 5.7.2.1. [Parameters](#sec-5-7-2-1)
-						*	 5.7.2.2. [HTTP Codes](#sec-5-7-2-2)
-						*	 5.7.2.3. [Example](#sec-5-7-2-3)
-				*	 5.7.3. [Method: update (gupdate)](#sec-5-7-3)
-						*	 5.7.3.1. [Parameters](#sec-5-7-3-1)
-						*	 5.7.3.2. [HTTP Codes](#sec-5-7-3-2)
-						*	 5.7.3.3. [Example](#sec-5-7-3-3)
+				*	 5.7.2. [Method: run](#sec-5-7-2)
+						*	 5.7.2.1. [HTTP Model](#sec-5-7-2-1)
+						*	 5.7.2.2. [parameters](#sec-5-7-2-2)
+						*	 5.7.2.3. [HTTP Codes](#sec-5-7-2-3)
+						*	 5.7.2.4. [Example](#sec-5-7-2-4)
+						*	 5.7.2.5. [Return Data](#sec-5-7-2-5)
+		*	 5.8. [Template](#sec-5-8)
+				*	 5.8.1. [Method: index](#sec-5-8-1)
+						*	 5.8.1.1. [HTTP Model](#sec-5-8-1-1)
+						*	 5.8.1.2. [parameters](#sec-5-8-1-2)
+						*	 5.8.1.3. [HTTP Codes](#sec-5-8-1-3)
+						*	 5.8.1.4. [Example](#sec-5-8-1-4)
+						*	 5.8.1.5. [Return Data](#sec-5-8-1-5)
+				*	 5.8.2. [Method: create](#sec-5-8-2)
+						*	 5.8.2.1. [Parameters](#sec-5-8-2-1)
+						*	 5.8.2.2. [HTTP Codes](#sec-5-8-2-2)
+						*	 5.8.2.3. [Example](#sec-5-8-2-3)
+				*	 5.8.3. [Method: update (gupdate)](#sec-5-8-3)
+						*	 5.8.3.1. [Parameters](#sec-5-8-3-1)
+						*	 5.8.3.2. [HTTP Codes](#sec-5-8-3-2)
+						*	 5.8.3.3. [Example](#sec-5-8-3-3)
 *	 6. [Debugging Errors](#sec-6)
 		*	 6.1. [Fetching HTTP Error Codes from a GET Request](#sec-6-1)
 		*	 6.2. [Fetching HTTP Error Codes from a POST Request](#sec-6-2)
@@ -329,32 +330,17 @@ And the most common form of API use cases.
 DNS entry is used to access it.  Don't know it?  Ask us at support@aura-software.com!
 
 
-You should also have your [Bright Realm ID and Secret key](#access-modes/via-realm-id-and-secret-key), which can be obtained from <a href="https://bright.aura-software.com/contact-us/" target="Bright Support">Bright Support</a>.
+You should also have your [Bright Realm ID and Secret key](#access-modes-via-realm-id-and-secret-key), which can be obtained from <a href="https://bright.aura-software.com/contact-us/" target="Bright Support">Bright Support</a>.
 
-
-*Access via SCORM Cloud app ID and secret key is deprecated and not recommended*
-
-If you are using a SCORMCloud course provider, API access can be provided using your SCORMCloud APP ID and secret key.  These are
-available from Aura Support, or from the SCORMCloud console available at https://cloud.scorm.com.
-
-* The SCORMCloud APP ID for your SCORMCloud Application.
-* The SCORMCloud Secret Key for your SCORMCloud Application.
-
-Here's an example of fetching these values from the SCORMCloud administration console:
-
-![SCORMCloud App](https://content.screencast.com/users/bretweinraub/folders/Jing/media/a0ebfd4c-e41d-41f0-8a80-abc4415ddc42/00000554.png)
-
-You can access this by selection "Apps" from the SCORMCloud administration console left hand menu.
-
-You can also access Bright with a Bright realm app id and key [see section](#access-modes/via-realm-id-and-secret-key).
-
-Certain functionality can only be accessed with a realm key, such as invitations or the utilization of multiple course providers.
+See the section on [access modes](#access-modes) for your alternatives for authenticating with Bright Server.
 
 For the purposes of this example, we will use the following:
 
 * Bright API URL: https://[BRIGHT URL]/bright/api/v2
-* SCORMCloud APPID: **RQIBAXU49I**
-* SCORMCloud Secret Key: **nCwrTDSy1MzaeyhN0TFfi3uH3huzlu6CNmyHUG5N**
+* Bright Realm Guid: **sJtL8PtZG8S0z9bxkjPQ&**
+* Bright Realm Secret Key: **PcQVlfCTIUebps3T268XKzAXvdzFpgc5svkM0uu38Zw**
+
+For your environment, use your realm guid and secret key provided by <a href="https://bright.aura-software.com/contact-us/" target="Bright Support">Bright Support</a>.
 
 With the above information, we can already use our API.  To do so, we can test this straight from curl a command line tool that is
 easy to install on most systems.
@@ -362,11 +348,11 @@ easy to install on most systems.
 When learning the Bright API, we recommend you start by assembling some simple curl commands from your command line in order to get
 a feel for what is possible.
 
-So let's get our list of course from our API:
+So let's get our list of courses from our API:
 
 ```shell
-curl 'https://[BRIGHT URL]/bright/api/v2/course.xml?sc_app_id=RQIBAXU49I&
-sc_secret_key=nCwrTDSy1MzaeyhN0TFfi3uH3huzlu6CNmyHUG5N'
+curl 'https://[BRIGHT URL]/bright/api/v2/course.xml?realm_guid=sJtL8PtZG8S0z9bxkjPQ&
+realm_secret_key=PcQVlfCTIUebps3T268XKzAXvdzFpgc5svkM0uu38Zw'
 ```
 
 If you've executed this correctly, you'll get a result like:
@@ -538,8 +524,6 @@ custom_re=points_available\":\"([4-9]|[1-9]([0-9])+)'
 <a name="sec-3-4-2"></a>
 #### 3.4.2. Using Multiple Expressions On The Same Field.
 
-Using Multiple Expressions On The Same Field.
-
 It is possible to repeatedly query the same field from multiple
 regular expressions.  To do this, use a numerical suffix on the query
 parameter.  So instead of custom_re, for example, use
@@ -588,43 +572,20 @@ For example, on the course controller, when using
 
 The Bright API can be accessed to two different ways:
 
-* [SCORMCloud App ID and Secret Key](#access-modes/via-scormcloud-app-id-and-secret-key)
-* [Bright API Key](#access-modes/via-bright-api-key)
+* [Bright API Key](#access-modes-via-bright-api-key)
 * [Brigh Realm GUID and Secret Key](#access-modes-via-realm-id-and-secret-key)
+* [SCORMCloud App ID and Secret Key](#access-modes-via-scormcloud-app-id-and-secret-key)
 
-If you do not specify either the api key/secret key pair **OR** the Bright API key, you will
-receive HTTP code 401 (Unauthorized) in your response.
+If you do not specify a valid access mode in your request, you will receive HTTP code 401 (Unauthorized) in your response.
 
 If you specify multiple authentication models, you will received a 501 (not implemented).
 
-If you specify an unknown SCORMCloud APPId and Secret key, you will receive a 500 (server error).
-
-The Bright API can be accessed to two different ways:
-
-
-
-<a name="access-modes-via-scormcloud-app-id-and-secret-key"></a>
-<a name="sec-4-1"></a>
-### 4.1. Via SCORMCloud App ID and Secret Key
-
-I using the SCORMCloud secret key and app id.  Generally speaking, this is fine
-for server side code that is secured and publicly accessible.  You should NEVER share the APP ID and secret key since this give complete access to all of
-your data.
-
-Example:
-
-```shell
-curl 'https://[BRIGHT URL]/bright/api/v2/course.json?sc_app_id=\
-RQIBAXU49I&sc_secret_key=nCwrTDSy1MzaeyhN0TFfi3uH3huzlu6CNmyHUG5N'
-```
-
-The above example will show all courses for the course provider defined by the SCORMCloud data (app id, secret key).
 
 
 
 <a name="access-modes-via-bright-api-key"></a>
-<a name="sec-4-2"></a>
-### 4.2. Via Bright API Key
+<a name="sec-4-1"></a>
+### 4.1. Via Bright API Key
 
 The API Key interface allows for the creation of API keys for Bright Server.
 
@@ -658,8 +619,8 @@ This API token is now "bound" to the access level specified when the key was cre
 
 
 <a name="access-modes-via-realm-id-and-secret-key"></a>
-<a name="sec-4-3"></a>
-### 4.3. Via Realm ID and Secret Key
+<a name="sec-4-2"></a>
+### 4.2. Via Realm ID and Secret Key
 
 Your Bright realm ID and secret key will be furnished to you by Bright support.  For many functions it is not necessary.  If you aren't working
 with invitations, creating user records on the fly, or using multiple course providers, you probably won't need a Realm key.  Note you do not
@@ -714,6 +675,69 @@ realm_secret_key=PcVQflTCUIbe3ps2T86KXAzvXzdpFcgs5Mvku03uZ8w'
 
 
 
+<a name="access-modes-via-scormcloud-app-id-and-secret-key"></a>
+<a name="sec-4-3"></a>
+### 4.3. Via SCORMCloud App ID and Secret Key
+
+This sections describes authentication using the SCORMCloud secret key and app id.
+
+If you are using a SCORMCloud course provider, API access can be provided using your SCORMCloud APP ID and secret key.  These are
+available from Aura Support, or from the SCORMCloud console available at https://cloud.scorm.com.
+
+* The SCORMCloud APP ID for your SCORMCloud Application.
+* The SCORMCloud Secret Key for your SCORMCloud Application.
+
+Here's an example of fetching these values from the SCORMCloud administration console:
+
+![SCORMCloud App](https://content.screencast.com/users/bretweinraub/folders/Jing/media/a0ebfd4c-e41d-41f0-8a80-abc4415ddc42/00000554.png)
+
+You can access this by selection "Apps" from the SCORMCloud administration console left hand menu.
+
+*Access via SCORM Cloud app ID and secret key is deprecated and may be removed at a later date.*
+
+*You should NEVER share the APP ID and secret key since this give complete access to all of your data.**
+
+Example:
+
+```shell
+curl 'https://[BRIGHT URL]/bright/api/v2/course.xml?sc_app_id=RQIBAXU49I&
+sc_secret_key=nCwrTDSy1MzaeyhN0TFfi3uH3huzlu6CNmyHUG5N'
+```
+
+If you've executed this correctly, you'll get a result like:
+
+And the result:
+
+```xml
+
+  <?xml version="1.0" encoding="UTF-8"?>
+  <scorm-cloud-courses type="array">
+    <scorm-cloud-course>
+      <course-provider-id type="integer">6</course-provider-id>
+      <created-at type="datetime">2012-11-26T12:10:40Z</created-at>
+      <custom></custom>
+      <id type="integer">184</id>
+      <metadata>{"title":"ENT Foundation - Post Training QUIZ",
+	             "description":"",
+				 "duration":"0",
+				 "typicaltime":"0",
+				 "keywords":null}
+ 	  </metadata>
+      <registration-count type="integer">1</registration-count>
+      <sc-course-id>1-507727747154e</sc-course-id>
+      <size type="integer">157758</size>
+      <title>System Test Course</title>
+      <updated-at type="datetime">2013-01-17T16:20:10Z</updated-at>
+      <versions type="integer">-1</versions>
+    </scorm-cloud-course>
+  </scorm-cloud-courses>
+```
+
+
+The above example will show all courses for the course provider defined by the SCORMCloud data (app id, secret key).
+
+
+
 <a name="api-modules"></a>
 <a name="sec-5"></a>
 ## 5. API Modules
@@ -729,25 +753,81 @@ If you encounter an restful API method that is not implemented, please let us kn
 
 
 
-<a name="api-modules-api-key"></a>
+<a name="api-modules-list-of-parameters-available-to-all-methods"></a>
 <a name="sec-5-1"></a>
-### 5.1. API Key
+### 5.1. List Of Parameters Available To All Methods
+
+
+For the API documentation that follows, for the sake of brevity we will omit in the description of each individual method the *generic* parameters that can be passed to each method.
+
+These are described in more depth here:
+
+- [Response Format](#quick-start-specifying-a-results-format)
+- [Access Modes](#access-modes)
+- [Using Regular Expression Queries](#quick-start-using-regular-expression-queries)
+- [Specifying the List Of Fields To Be Returned](#quick-start-specifying-the-list-of-fields-to-be-returned)
+
+#### Parameters related to response format:
+
+|Parameter|Example|Description|
+|--|--|--|
+|format|format=(json\|xml\|csv)|Specify the format of the response|
+
+
+#### Parameters related to access method:
+
+Note, you must specify __ONE OF__:
+
+- api_token
+- realm_guid AND realm_secret_key
+- sc_app_id AND sc_secret_key [__DEPRECATED__]
+
+|Parameter|Example|Description|
+|--|--|--|
+|sc_app_id|sc_app_id=[a valid sc_app_id]||
+|sc_secret_key|sc_secret_key=[a valid sc_secret_key]||
+|realm_guid|realm_guid=[a valid realm_guid]||
+|realm_secret_key|realm_secret_key=[a valid realm_secret_key]||
+|api_token|api_token=[a valid api_token]||
+|accessToken|accessToken|For historical reasons this is a synonym of __api_token__|
+
+#### Parameters that control the data to be returned.
+
+See [specifying the list of fields to be returned](#quick-start-specifying-the-list-of-fields-to-be-returned) for more information.
+
+
+|Parameter|Example|Description|
+|--|--|--|
+|fields|fields=[field1,...]|[specifying the list of fields to be returned](#quick-start-specifying-the-list-of-fields-to-be-returned)|
+|api_template|api_template=(public|public_minimum)|Defines the set of fields that will be returned.  public_minimum is recommended for applications that require higher performance. Web clients are encouraged to use public_minimum whenever possible.  Ignore if __fields__ is specified.|
+
+
+
+
+
+
+
+
+
+<a name="api-modules-api-key"></a>
+<a name="sec-5-2"></a>
+### 5.2. API Key
 
 The API Key interface allows for the creation of API keys for Bright Server.
 
 
 
 <a name="api-modules-api-key-method-create"></a>
-<a name="sec-5-1-1"></a>
-#### 5.1.1. Method: create
+<a name="sec-5-2-1"></a>
+#### 5.2.1. Method: create
 
 
 Create a new API key.
 
 
 <a name="api-modules-api-key-method-create-http-model"></a>
-<a name="sec-5-1-1-1"></a>
-##### 5.1.1.1. HTTP Model:
+<a name="sec-5-2-1-1"></a>
+##### 5.2.1.1. HTTP Model:
 
 <table>
   <tr>
@@ -762,8 +842,8 @@ Create a new API key.
 
 
 <a name="api-modules-api-key-method-create-parameters"></a>
-<a name="sec-5-1-1-2"></a>
-##### 5.1.1.2. Parameters
+<a name="sec-5-2-1-2"></a>
+##### 5.2.1.2. Parameters
 
 <table>
   <tr>
@@ -806,16 +886,16 @@ Cloud application.</td>
 
 
 <a name="api-modules-api-key-method-create-return-data"></a>
-<a name="sec-5-1-1-3"></a>
-##### 5.1.1.3. Return Data
+<a name="sec-5-2-1-3"></a>
+##### 5.2.1.3. Return Data
 
 Returns a JSON document of the new record.  HTTP Code is set to 201 (item created).
 
 
 
 <a name="api-modules-api-key-method-create-example"></a>
-<a name="sec-5-1-1-4"></a>
-##### 5.1.1.4. Example:
+<a name="sec-5-2-1-4"></a>
+##### 5.2.1.4. Example:
 
 ```
 curl -w "%{http_code}" -d 'sc_app_id=RQIBAXU49I
@@ -843,8 +923,8 @@ The '-w %{http_code}' piece allows you to view the returned HTTP code.
 
 
 <a name="api-modules-api-key-method-create-http-codes"></a>
-<a name="sec-5-1-1-5"></a>
-##### 5.1.1.5. HTTP Codes
+<a name="sec-5-2-1-5"></a>
+##### 5.2.1.5. HTTP Codes
 
 <table>
   <tr>	
@@ -868,16 +948,16 @@ The '-w %{http_code}' piece allows you to view the returned HTTP code.
 
 
 <a name="api-modules-course"></a>
-<a name="sec-5-2"></a>
-### 5.2. Course
+<a name="sec-5-3"></a>
+### 5.3. Course
 
 
 
 
 
 <a name="api-modules-course-determining-your-id-for-create-and-update"></a>
-<a name="sec-5-2-1"></a>
-#### 5.2.1. Determining your :id for create and update
+<a name="sec-5-3-1"></a>
+#### 5.3.1. Determining your :id for create and update
 
 
 For courses, Bright maintains a GUID that can be used as the :id field when using
@@ -891,15 +971,19 @@ For other course providers, the GUID will be a Bright generated unique ID.
 
 
 <a name="api-modules-course-method-index"></a>
-<a name="sec-5-2-2"></a>
-#### 5.2.2. Method: Index
+<a name="sec-5-3-2"></a>
+#### 5.3.2. Method: Index
 
-The index method allows the api user to fetch a course list.
+The index method allows the api user to fetch a course list.  
+
+When using the course#index method with an Api key, where the API key is for a particular learner, it is often desireable to return
+the learner's registration data on each course selected.   This lets the API client avoid having to query the learner's data
+for each course returned.   You can do this with the **include_registrations** parameter.
 
 
 <a name="api-modules-course-method-index-http-model"></a>
-<a name="sec-5-2-2-1"></a>
-##### 5.2.2.1. HTTP Model:
+<a name="sec-5-3-2-1"></a>
+##### 5.3.2.1. HTTP Model:
 
 <table>
   <tr>
@@ -914,46 +998,39 @@ The index method allows the api user to fetch a course list.
 
 
 <a name="api-modules-course-method-index-parameters"></a>
-<a name="sec-5-2-2-2"></a>
-##### 5.2.2.2. Parameters
-
-<table>
-  <tr>
-    <th>Parameter</th>
-    <th>Example</th>
-    <th>Notes</th>
-  </tr>
-   <tr>
-     <td>__access method__</td>
-	 <td>api_key=[an api key created previously]</td>
-	 <td>see [Access Modes](#access-modes)</td>
-  </tr>
-   <tr>
-     <td>api_template</td>
-	 <td>api_template=(public|public_minimum)</td>
-	 <td>Defines the set of fields that will be returned.  public_minimum is recommended for applications that require higher performance.
-	 Web clients are encouraged to use public_minimum whenever possible.</td>
-  </tr>
-   <tr>
-     <td>course_guid</td>
-	 <td>?course_guid=ACourseID</td>
-	 <td>For a SCORMCloud course, this will match the course ID in scormcloud.
-	 See also <a href="https://help.aura-software.com/finding-a-course-id-in-scormcloud/">Finding Your Course ID in SCORMCloud.</a></td>
-  </tr>
-   <tr>
-     <td>include_registrations</td>
-     <td>include_registrations=t</td>
-	 <td>When access is via accessToken, with an associated user, a nested record showing the user's most recent registration to the course.</td>
-  </tr>
+<a name="sec-5-3-2-2"></a>
+##### 5.3.2.2. Parameters
 
 
-</table>
+All Bright API calls respond the parameters specified in [List of Parameters Available To All Methods](#api-modules-list-of-parameters-available-to-all-methods).
+
+Parameters unique to this method, not included in above:
+
+###### Control Parameters
+
+Control parameters are not filters and cannot be used with [Using Regular Expression Queries](#quick-start-using-regular-expression-queries).
+
+|Parameter|Example|Description|
+|--|--|--|
+|include_registrations|include_registrations=t|When access is via accessToken, with an associated user, a nested record showing the user's most recent registration to the course.|
+
+###### Filter Parameters
+
+Filter parameters restrict the rows to be returned.   Any filter parameter can be used with a regular expression, see [Using Regular Expression Queries](#quick-start-using-regular-expression-queries).
+
+
+|Parameter|Example|Description|
+|--|--|--|
+|course_guid|course_guid=ACourseID|For a SCORMCloud course, this will match the course ID in scormcloud.  See also <a href="https://help.aura-software.com/finding-a-course-id-in-scormcloud/">Finding Your Course ID in SCORMCloud.|
+|title|title=My%20Course|An exact match of the course Title. Don't forget to URI encode your data.|
+|custom|custom=SomeCustomText|An exact match of the course custom. Don't forget to URI encode your data.  Much more useful with 'custom_re', as described in [Using Regular Expression Queries](#quick-start-using-regular-expression-queries)|
+|id|id=[a course GUID]|As the Course GUID is the unique identifier for the course, it can be addressed via the id= construct|  
 
 
 
 <a name="api-modules-course-method-index-example"></a>
-<a name="sec-5-2-2-3"></a>
-##### 5.2.2.3. Example
+<a name="sec-5-3-2-3"></a>
+##### 5.3.2.3. Example
 
 ```
 curl -w "%{http_code}" 'https://[BRIGHT URL]/bright/api/v2/course.json?course_guid=16-4fbd9ea698bce
@@ -961,8 +1038,8 @@ curl -w "%{http_code}" 'https://[BRIGHT URL]/bright/api/v2/course.json?course_gu
 
 
 <a name="api-modules-course-method-index-http-codes"></a>
-<a name="sec-5-2-2-4"></a>
-##### 5.2.2.4. HTTP Codes
+<a name="sec-5-3-2-4"></a>
+##### 5.3.2.4. HTTP Codes
 
 <table>
   <tr>	
@@ -986,20 +1063,20 @@ curl -w "%{http_code}" 'https://[BRIGHT URL]/bright/api/v2/course.json?course_gu
 
 
 <a name="api-modules-invitation"></a>
-<a name="sec-5-3"></a>
-### 5.3. Invitation
+<a name="sec-5-4"></a>
+### 5.4. Invitation
 
 
 
 <a name="api-modules-invitation-method-add_learners"></a>
-<a name="sec-5-3-1"></a>
-#### 5.3.1. Method: add_learners
+<a name="sec-5-4-1"></a>
+#### 5.4.1. Method: add_learners
 
 
 
 <a name="api-modules-invitation-method-add_learners-http-model"></a>
-<a name="sec-5-3-1-1"></a>
-##### 5.3.1.1. HTTP Model
+<a name="sec-5-4-1-1"></a>
+##### 5.4.1.1. HTTP Model
 
 
 <table>
@@ -1015,8 +1092,8 @@ curl -w "%{http_code}" 'https://[BRIGHT URL]/bright/api/v2/course.json?course_gu
 
 
 <a name="api-modules-invitation-method-add_learners-parameters"></a>
-<a name="sec-5-3-1-2"></a>
-##### 5.3.1.2. parameters
+<a name="sec-5-4-1-2"></a>
+##### 5.4.1.2. parameters
 
 <table>
   <tr>
@@ -1077,8 +1154,8 @@ curl -w "%{http_code}" 'https://[BRIGHT URL]/bright/api/v2/course.json?course_gu
 </table>
 
 <a name="api-modules-invitation-method-add_learners-http-codes"></a>
-<a name="sec-5-3-1-3"></a>
-##### 5.3.1.3. HTTP Codes
+<a name="sec-5-4-1-3"></a>
+##### 5.4.1.3. HTTP Codes
 
 <table>
   <tr>	
@@ -1110,8 +1187,8 @@ curl -w "%{http_code}" 'https://[BRIGHT URL]/bright/api/v2/course.json?course_gu
 
 
 <a name="api-modules-invitation-method-add_learners-example"></a>
-<a name="sec-5-3-1-4"></a>
-##### 5.3.1.4. Example
+<a name="sec-5-4-1-4"></a>
+##### 5.4.1.4. Example
 
 
     curl -w "%{http_code}" 'https://[bright-url]/bright/api/v2/invitation/add_learners.json?nodelay=1&api_template=extended&name=xxx&learners=%5B%22admin%40aura-software.com%22%5D&realm_guid=sJtL8PtZG8S0z9bxkjPQ&realm_secret_key=PcQVlfCTIUebps3T268XKzAXvdzFpgc5svkM0uu38Zw'
@@ -1120,8 +1197,8 @@ curl -w "%{http_code}" 'https://[BRIGHT URL]/bright/api/v2/course.json?course_gu
 
 
 <a name="api-modules-invitation-method-add_learners-return-data"></a>
-<a name="sec-5-3-1-5"></a>
-##### 5.3.1.5. Return Data
+<a name="sec-5-4-1-5"></a>
+##### 5.4.1.5. Return Data
 
 
 If api_template request parameter isn't set to extended, the API will respond with the invitation document:
@@ -1186,8 +1263,8 @@ When api_template is set to extended, the response looks like:
 
 
 <a name="api-modules-realm-user"></a>
-<a name="sec-5-4"></a>
-### 5.4. Realm User
+<a name="sec-5-5"></a>
+### 5.5. Realm User
 
 For learners, its generally not necessary to prepopulate realm users as creating a registration implicitly creates the user.
 
@@ -1196,14 +1273,14 @@ It is possible to create them via the API and also manipulate their custom field
 
 
 <a name="api-modules-realm-user-method-index"></a>
-<a name="sec-5-4-1"></a>
-#### 5.4.1. Method: index
+<a name="sec-5-5-1"></a>
+#### 5.5.1. Method: index
 
 
 
 <a name="api-modules-realm-user-method-index-http-model"></a>
-<a name="sec-5-4-1-1"></a>
-##### 5.4.1.1. HTTP Model
+<a name="sec-5-5-1-1"></a>
+##### 5.5.1.1. HTTP Model
 
 
 <table>
@@ -1219,8 +1296,8 @@ It is possible to create them via the API and also manipulate their custom field
 
 
 <a name="api-modules-realm-user-method-index-parameters"></a>
-<a name="sec-5-4-1-2"></a>
-##### 5.4.1.2. parameters
+<a name="sec-5-5-1-2"></a>
+##### 5.5.1.2. parameters
 
 <table>
   <tr>
@@ -1251,8 +1328,8 @@ It is possible to create them via the API and also manipulate their custom field
 </table>
 
 <a name="api-modules-realm-user-method-index-http-codes"></a>
-<a name="sec-5-4-1-3"></a>
-##### 5.4.1.3. HTTP Codes
+<a name="sec-5-5-1-3"></a>
+##### 5.5.1.3. HTTP Codes
 
 <table>
   <tr>	
@@ -1279,27 +1356,27 @@ It is possible to create them via the API and also manipulate their custom field
 
 
 <a name="api-modules-realm-user-method-index-example"></a>
-<a name="sec-5-4-1-4"></a>
-##### 5.4.1.4. Example
+<a name="sec-5-5-1-4"></a>
+##### 5.5.1.4. Example
 
 
 
 <a name="api-modules-realm-user-method-index-return-data"></a>
-<a name="sec-5-4-1-5"></a>
-##### 5.4.1.5. Return Data
+<a name="sec-5-5-1-5"></a>
+##### 5.5.1.5. Return Data
 
 
 
 <a name="api-modules-realm-user-method-create"></a>
-<a name="sec-5-4-2"></a>
-#### 5.4.2. Method: create
+<a name="sec-5-5-2"></a>
+#### 5.5.2. Method: create
 
 Creates a new realm user.  You must use a realm guid and secret key (or api key creating bound to a realm key) to create a realm user.
 
 
 <a name="api-modules-realm-user-method-create-parameters"></a>
-<a name="sec-5-4-2-1"></a>
-##### 5.4.2.1. Parameters
+<a name="sec-5-5-2-1"></a>
+##### 5.5.2.1. Parameters
 
 <table>
   <tr>
@@ -1332,8 +1409,8 @@ Creates a new realm user.  You must use a realm guid and secret key (or api key 
 
 
 <a name="api-modules-realm-user-method-create-http-codes"></a>
-<a name="sec-5-4-2-2"></a>
-##### 5.4.2.2. HTTP Codes
+<a name="sec-5-5-2-2"></a>
+##### 5.5.2.2. HTTP Codes
 
 <table>
   <tr>	
@@ -1356,8 +1433,8 @@ Creates a new realm user.  You must use a realm guid and secret key (or api key 
 
 
 <a name="api-modules-realm-user-method-create-example"></a>
-<a name="sec-5-4-2-3"></a>
-##### 5.4.2.3. Example
+<a name="sec-5-5-2-3"></a>
+##### 5.5.2.3. Example
 
 ```
 curl -w "%{http_code}" 
@@ -1380,16 +1457,16 @@ custom=foo'
 
 
 <a name="api-modules-realm-user-method-update-gupdate"></a>
-<a name="sec-5-4-3"></a>
-#### 5.4.3. Method: update (gupdate)
+<a name="sec-5-5-3"></a>
+#### 5.5.3. Method: update (gupdate)
 
 Update a realm user.  You must use a realm guid and secret key (or api key creating bound to a realm key) to update a realm user.
 
 
 
 <a name="api-modules-realm-user-method-update-gupdate-parameters"></a>
-<a name="sec-5-4-3-1"></a>
-##### 5.4.3.1. Parameters
+<a name="sec-5-5-3-1"></a>
+##### 5.5.3.1. Parameters
 
 <table>
   <tr>
@@ -1417,8 +1494,8 @@ Update a realm user.  You must use a realm guid and secret key (or api key creat
 
 
 <a name="api-modules-realm-user-method-update-gupdate-http-codes"></a>
-<a name="sec-5-4-3-2"></a>
-##### 5.4.3.2. HTTP Codes
+<a name="sec-5-5-3-2"></a>
+##### 5.5.3.2. HTTP Codes
 
 <table>
   <tr>	
@@ -1441,8 +1518,8 @@ Update a realm user.  You must use a realm guid and secret key (or api key creat
 
 
 <a name="api-modules-realm-user-method-update-gupdate-example"></a>
-<a name="sec-5-4-3-3"></a>
-##### 5.4.3.3. Example
+<a name="sec-5-5-3-3"></a>
+##### 5.5.3.3. Example
 
 ```
 curl -w "%{http_code}" 
@@ -1455,15 +1532,15 @@ custom=foox'
 
 
 <a name="api-modules-registration"></a>
-<a name="sec-5-5"></a>
-### 5.5. Registration
+<a name="sec-5-6"></a>
+### 5.6. Registration
 
 
 
 
 <a name="api-modules-registration-determining-your-id-for-create-and-update"></a>
-<a name="sec-5-5-1"></a>
-#### 5.5.1. Determining your :id for create and update
+<a name="sec-5-6-1"></a>
+#### 5.6.1. Determining your :id for create and update
 
 
 For registrations, Bright maintains a GUID that can be used as the :id field when using
@@ -1477,8 +1554,8 @@ For other course providers, the GUID will be a Bright generated unique ID.
 
 
 <a name="api-modules-registration-format-of-return-data"></a>
-<a name="sec-5-5-2"></a>
-#### 5.5.2. Format of return data
+<a name="sec-5-6-2"></a>
+#### 5.6.2. Format of return data
 
 <table>
 <tr><th>Field Name</th><th>Example Data</th><th>Description</th></tr>
@@ -1514,16 +1591,16 @@ For other course providers, the GUID will be a Bright generated unique ID.
 
 
 <a name="api-modules-registration-method-index"></a>
-<a name="sec-5-5-3"></a>
-#### 5.5.3. Method: index
+<a name="sec-5-6-3"></a>
+#### 5.6.3. Method: index
 
 The index method allows the api user to query registrations.
 
 
 
 <a name="api-modules-registration-method-index-http-model"></a>
-<a name="sec-5-5-3-1"></a>
-##### 5.5.3.1. HTTP Model
+<a name="sec-5-6-3-1"></a>
+##### 5.6.3.1. HTTP Model
 
 
 <table>
@@ -1539,8 +1616,8 @@ The index method allows the api user to query registrations.
 
 
 <a name="api-modules-registration-method-index-parameters"></a>
-<a name="sec-5-5-3-2"></a>
-##### 5.5.3.2. parameters
+<a name="sec-5-6-3-2"></a>
+##### 5.6.3.2. parameters
 
 <table>
   <tr>
@@ -1599,8 +1676,8 @@ The index method allows the api user to query registrations.
 </table>
 
 <a name="api-modules-registration-method-index-http-codes"></a>
-<a name="sec-5-5-3-3"></a>
-##### 5.5.3.3. HTTP Codes
+<a name="sec-5-6-3-3"></a>
+##### 5.6.3.3. HTTP Codes
 
 <table>
   <tr>	
@@ -1627,8 +1704,8 @@ The index method allows the api user to query registrations.
 
 
 <a name="api-modules-registration-method-index-example"></a>
-<a name="sec-5-5-3-4"></a>
-##### 5.5.3.4. Example
+<a name="sec-5-6-3-4"></a>
+##### 5.6.3.4. Example
 
 ```
 curl -w "%{http_code}" 'https://[BRIGHT URL]/bright/api/v2/registration.json?
@@ -1639,14 +1716,14 @@ course_guid=16-4fbd9ea698bce
 
 
 <a name="api-modules-registration-method-index-return-data"></a>
-<a name="sec-5-5-3-5"></a>
-##### 5.5.3.5. Return Data
+<a name="sec-5-6-3-5"></a>
+##### 5.6.3.5. Return Data
 
 
 
 <a name="api-modules-registration-method-create"></a>
-<a name="sec-5-5-4"></a>
-#### 5.5.4. Method: create
+<a name="sec-5-6-4"></a>
+#### 5.6.4. Method: create
 
 Creates a new registration.  Can be used in a single call that can be used to return an existing registration if
 one exists, or create a new one if it does not.
@@ -1654,8 +1731,8 @@ one exists, or create a new one if it does not.
 
 
 <a name="api-modules-registration-method-create-parameters"></a>
-<a name="sec-5-5-4-1"></a>
-##### 5.5.4.1. Parameters
+<a name="sec-5-6-4-1"></a>
+##### 5.6.4.1. Parameters
 
 <table>
   <tr>
@@ -1714,8 +1791,8 @@ one exists, or create a new one if it does not.
 
 
 <a name="api-modules-registration-method-create-http-codes"></a>
-<a name="sec-5-5-4-2"></a>
-##### 5.5.4.2. HTTP Codes
+<a name="sec-5-6-4-2"></a>
+##### 5.6.4.2. HTTP Codes
 
 <table>
   <tr>	
@@ -1761,8 +1838,8 @@ handle this error.
 
 
 <a name="api-modules-registration-method-create-example"></a>
-<a name="sec-5-5-4-3"></a>
-##### 5.5.4.3. Example
+<a name="sec-5-6-4-3"></a>
+##### 5.6.4.3. Example
 
 For a successful request returned will be an XML or JSON document of the SCORMCloud registration.  Note this example is 
 using the gcreate alias (using an HTTP get).
@@ -1809,8 +1886,8 @@ dont_duplicate=t'
 
 
 <a name="api-modules-registration-method-launch_url"></a>
-<a name="sec-5-5-5"></a>
-#### 5.5.5. Method: launch_url
+<a name="sec-5-6-5"></a>
+#### 5.6.5. Method: launch_url
 
 The launch_url method is used to a get a unique, transient URL for course launch in direct response
 to a course launch event.   Note, these cannot be cached, as they will expire.
@@ -1820,8 +1897,8 @@ to a course launch event.   Note, these cannot be cached, as they will expire.
 
 
 <a name="api-modules-registration-method-launch_url-http-model"></a>
-<a name="sec-5-5-5-1"></a>
-##### 5.5.5.1. HTTP Model
+<a name="sec-5-6-5-1"></a>
+##### 5.6.5.1. HTTP Model
 
 
 <table>
@@ -1837,8 +1914,8 @@ to a course launch event.   Note, these cannot be cached, as they will expire.
 
 
 <a name="api-modules-registration-method-launch_url-parameters"></a>
-<a name="sec-5-5-5-2"></a>
-##### 5.5.5.2. parameters
+<a name="sec-5-6-5-2"></a>
+##### 5.6.5.2. parameters
 
 <table>
   <tr>
@@ -1891,8 +1968,8 @@ to a course launch event.   Note, these cannot be cached, as they will expire.
 </table>
 
 <a name="api-modules-registration-method-launch_url-http-codes"></a>
-<a name="sec-5-5-5-3"></a>
-##### 5.5.5.3. HTTP Codes
+<a name="sec-5-6-5-3"></a>
+##### 5.6.5.3. HTTP Codes
 
 <table>
   <tr>	
@@ -1919,34 +1996,34 @@ to a course launch event.   Note, these cannot be cached, as they will expire.
 
 
 <a name="api-modules-registration-method-launch_url-example"></a>
-<a name="sec-5-5-5-4"></a>
-##### 5.5.5.4. Example
+<a name="sec-5-6-5-4"></a>
+##### 5.6.5.4. Example
 
 
 
 <a name="api-modules-registration-method-launch_url-return-data"></a>
-<a name="sec-5-5-5-5"></a>
-##### 5.5.5.5. Return Data
+<a name="sec-5-6-5-5"></a>
+##### 5.6.5.5. Return Data
 
 
 
 <a name="api-modules-storedquery"></a>
-<a name="sec-5-6"></a>
-### 5.6. StoredQuery
+<a name="sec-5-7"></a>
+### 5.7. StoredQuery
 
 
 
 <a name="api-modules-storedquery-method-initialize"></a>
-<a name="sec-5-6-1"></a>
-#### 5.6.1. Method: initialize
+<a name="sec-5-7-1"></a>
+#### 5.7.1. Method: initialize
 
 Initialize is generally not necessary, but can be used in fresh installs of Bright Server to initialize the stored queries with a
 query_scope of 'bright'.
 
 
 <a name="api-modules-storedquery-method-initialize-http-model"></a>
-<a name="sec-5-6-1-1"></a>
-##### 5.6.1.1. HTTP Model
+<a name="sec-5-7-1-1"></a>
+##### 5.7.1.1. HTTP Model
 
 
 <table>
@@ -1962,8 +2039,8 @@ query_scope of 'bright'.
 
 
 <a name="api-modules-storedquery-method-initialize-parameters"></a>
-<a name="sec-5-6-1-2"></a>
-##### 5.6.1.2. parameters
+<a name="sec-5-7-1-2"></a>
+##### 5.7.1.2. parameters
 
 <table>
   <tr>
@@ -1992,8 +2069,8 @@ query_scope of 'bright'.
 </table>
 
 <a name="api-modules-storedquery-method-initialize-http-codes"></a>
-<a name="sec-5-6-1-3"></a>
-##### 5.6.1.3. HTTP Codes
+<a name="sec-5-7-1-3"></a>
+##### 5.7.1.3. HTTP Codes
 
 <table>
   <tr>	
@@ -2015,26 +2092,26 @@ query_scope of 'bright'.
 
 
 <a name="api-modules-storedquery-method-initialize-example"></a>
-<a name="sec-5-6-1-4"></a>
-##### 5.6.1.4. Example
+<a name="sec-5-7-1-4"></a>
+##### 5.7.1.4. Example
 
 
 
 <a name="api-modules-storedquery-method-initialize-return-data"></a>
-<a name="sec-5-6-1-5"></a>
-##### 5.6.1.5. Return Data
+<a name="sec-5-7-1-5"></a>
+##### 5.7.1.5. Return Data
 
 
 
 <a name="api-modules-storedquery-method-run"></a>
-<a name="sec-5-6-2"></a>
-#### 5.6.2. Method: run
+<a name="sec-5-7-2"></a>
+#### 5.7.2. Method: run
 
 
 
 <a name="api-modules-storedquery-method-run-http-model"></a>
-<a name="sec-5-6-2-1"></a>
-##### 5.6.2.1. HTTP Model
+<a name="sec-5-7-2-1"></a>
+##### 5.7.2.1. HTTP Model
 
 
 <table>
@@ -2050,8 +2127,8 @@ query_scope of 'bright'.
 
 
 <a name="api-modules-storedquery-method-run-parameters"></a>
-<a name="sec-5-6-2-2"></a>
-##### 5.6.2.2. parameters
+<a name="sec-5-7-2-2"></a>
+##### 5.7.2.2. parameters
 
 <table>
   <tr>
@@ -2098,8 +2175,8 @@ query_scope of 'bright'.
 </table>
 
 <a name="api-modules-storedquery-method-run-http-codes"></a>
-<a name="sec-5-6-2-3"></a>
-##### 5.6.2.3. HTTP Codes
+<a name="sec-5-7-2-3"></a>
+##### 5.7.2.3. HTTP Codes
 
 <table>
   <tr>	
@@ -2131,32 +2208,32 @@ query_scope of 'bright'.
 
 
 <a name="api-modules-storedquery-method-run-example"></a>
-<a name="sec-5-6-2-4"></a>
-##### 5.6.2.4. Example
+<a name="sec-5-7-2-4"></a>
+##### 5.7.2.4. Example
 
 
 
 <a name="api-modules-storedquery-method-run-return-data"></a>
-<a name="sec-5-6-2-5"></a>
-##### 5.6.2.5. Return Data
+<a name="sec-5-7-2-5"></a>
+##### 5.7.2.5. Return Data
 
 
 
 <a name="api-modules-template"></a>
-<a name="sec-5-7"></a>
-### 5.7. Template
+<a name="sec-5-8"></a>
+### 5.8. Template
 
 
 
 <a name="api-modules-template-method-index"></a>
-<a name="sec-5-7-1"></a>
-#### 5.7.1. Method: index
+<a name="sec-5-8-1"></a>
+#### 5.8.1. Method: index
 
 
 
 <a name="api-modules-template-method-index-http-model"></a>
-<a name="sec-5-7-1-1"></a>
-##### 5.7.1.1. HTTP Model
+<a name="sec-5-8-1-1"></a>
+##### 5.8.1.1. HTTP Model
 
 
 <table>
@@ -2172,8 +2249,8 @@ query_scope of 'bright'.
 
 
 <a name="api-modules-template-method-index-parameters"></a>
-<a name="sec-5-7-1-2"></a>
-##### 5.7.1.2. parameters
+<a name="sec-5-8-1-2"></a>
+##### 5.8.1.2. parameters
 
 <table>
   <tr>
@@ -2216,8 +2293,8 @@ query_scope of 'bright'.
 </table>
 
 <a name="api-modules-template-method-index-http-codes"></a>
-<a name="sec-5-7-1-3"></a>
-##### 5.7.1.3. HTTP Codes
+<a name="sec-5-8-1-3"></a>
+##### 5.8.1.3. HTTP Codes
 
 <table>
   <tr>	
@@ -2244,62 +2321,62 @@ query_scope of 'bright'.
 
 
 <a name="api-modules-template-method-index-example"></a>
-<a name="sec-5-7-1-4"></a>
-##### 5.7.1.4. Example
+<a name="sec-5-8-1-4"></a>
+##### 5.8.1.4. Example
 
 
 
 <a name="api-modules-template-method-index-return-data"></a>
-<a name="sec-5-7-1-5"></a>
-##### 5.7.1.5. Return Data
+<a name="sec-5-8-1-5"></a>
+##### 5.8.1.5. Return Data
 
 
 
 <a name="api-modules-template-method-create"></a>
-<a name="sec-5-7-2"></a>
-#### 5.7.2. Method: create
+<a name="sec-5-8-2"></a>
+#### 5.8.2. Method: create
 
 
 
 <a name="api-modules-template-method-create-parameters"></a>
-<a name="sec-5-7-2-1"></a>
-##### 5.7.2.1. Parameters
+<a name="sec-5-8-2-1"></a>
+##### 5.8.2.1. Parameters
 
 
 
 <a name="api-modules-template-method-create-http-codes"></a>
-<a name="sec-5-7-2-2"></a>
-##### 5.7.2.2. HTTP Codes
+<a name="sec-5-8-2-2"></a>
+##### 5.8.2.2. HTTP Codes
 
 
 
 <a name="api-modules-template-method-create-example"></a>
-<a name="sec-5-7-2-3"></a>
-##### 5.7.2.3. Example
+<a name="sec-5-8-2-3"></a>
+##### 5.8.2.3. Example
 
 
 
 <a name="api-modules-template-method-update-gupdate"></a>
-<a name="sec-5-7-3"></a>
-#### 5.7.3. Method: update (gupdate)
+<a name="sec-5-8-3"></a>
+#### 5.8.3. Method: update (gupdate)
 
 
 
 <a name="api-modules-template-method-update-gupdate-parameters"></a>
-<a name="sec-5-7-3-1"></a>
-##### 5.7.3.1. Parameters
+<a name="sec-5-8-3-1"></a>
+##### 5.8.3.1. Parameters
 
 
 
 <a name="api-modules-template-method-update-gupdate-http-codes"></a>
-<a name="sec-5-7-3-2"></a>
-##### 5.7.3.2. HTTP Codes
+<a name="sec-5-8-3-2"></a>
+##### 5.8.3.2. HTTP Codes
 
 
 
 <a name="api-modules-template-method-update-gupdate-example"></a>
-<a name="sec-5-7-3-3"></a>
-##### 5.7.3.3. Example
+<a name="sec-5-8-3-3"></a>
+##### 5.8.3.3. Example
 
 
 

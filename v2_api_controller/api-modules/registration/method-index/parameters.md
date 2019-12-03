@@ -17,6 +17,11 @@
 should be returned.</td>
   </tr>	
   <tr>
+    <td>registration_guid</td>
+    <td>registration_guid=...</td>
+    <td>The SCORM Cloud registration GUID</td>
+  </tr>
+  <tr>
     <td>course_guid</td>
   	<td>course_guid=a_scorm_cloud_course_id</td>
 	<td>filter registrations to the specified course id.</td>
@@ -41,7 +46,5 @@ should be returned.</td>
   	<td>include_deleted=t</td>
 	<td>By default, deleted registrations are removed from the results.  Adding this flag suppresses this behavior.</td>
   </tr>	
-
-
 </table>
 
